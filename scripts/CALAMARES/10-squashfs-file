@@ -1,0 +1,7 @@
+#! /bin/bash
+
+set -e
+
+fai-sed \
+  's/\/run\/live\/\/medium\/live\/filesystem.squashfs/\/run\/initramfs\/live\/LiveOS\/squashfs.img/g' \
+  /etc/calamares/modules/unpackfs.conf 

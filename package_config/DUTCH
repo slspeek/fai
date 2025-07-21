@@ -1,0 +1,5 @@
+PACKAGES install
+task-dutch
+
+PACKAGES install GNOME
+firefox-esr-l10n-nl thunderbird-l10n-nl

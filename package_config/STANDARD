@@ -11,6 +11,7 @@ file
 gettext-base
 groff-base
 hdparm
+extrepo
 less
 locales
 lsof
@@ -29,3 +30,4 @@ ucf
 xz-utils
 python3
 python3-minimal
+vim
