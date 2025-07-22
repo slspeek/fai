@@ -1,0 +1,3 @@
+username=tux
+USERPW=$(echo $username | mkpasswd -m yescrypt -s)
+ROOTPW=$USERPW
