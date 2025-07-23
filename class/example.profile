@@ -6,7 +6,7 @@ Short: just a very simple example, no xorg, an account called demo
 Long: This is the demohost example of FAI.
 Additional account called tux with password: tux, root password: tux
 All needed packages are already on the CD or USB stick.
-Classes: INSTALL FAIBASE DUTCH DEBIAN DEMO TUX
+Classes: INSTALL FAIBASE DUTCH DEBIAN FANCY_BASH_PROMPT DEMO TUX 
 
 Name: Xfce
 Description: Xfce desktop, LVM partitioning
