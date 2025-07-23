@@ -7,7 +7,7 @@ zstd
 less
 linuxlogo
 rsync
-openssh-client openssh-server
+openssh-client
 time
 procinfo
 nullmailer
@@ -15,7 +15,6 @@ sudo
 locales
 console-setup kbd
 pciutils usbutils
-unattended-upgrades
 
 PACKAGES install NONFREE
 # you may want these non-free kernel drivers
