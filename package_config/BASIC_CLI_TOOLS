@@ -1,0 +1,17 @@
+PACKAGES install-norec 
+apt-file
+aptitude
+bash-completion
+curl
+debconf-utils
+extrepo
+info
+memtest86+
+netselect-apt
+patch
+sudo
+tmux
+tree
+vim
+wget
+whois
