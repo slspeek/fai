@@ -1,0 +1,4 @@
+#! /bin/bash
+
+systemctl restart console-setup.service
+rm $0

@@ -2,4 +2,4 @@
 set -e
 
 fcopy -M /etc/default/console-setup
-$ROOTCMD systemctl restart console-setup.service
+fcopy /etc/rc.local
