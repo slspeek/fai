@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+# from https://element.io/download#linux
+
+$ROOTCMD apt-get install -y wget apt-transport-https
+$ROOTCMD wget -O /usr/share/keyrings/element-io-archive-keyring.gpg \
+  https://packages.element.io/debian/element-io-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/element-io-archive-keyring.gpg] \
+https://packages.element.io/debian/ default main" \
+| $ROOTCMD tee /etc/apt/sources.list.d/element-io.list
+$ROOTCMD apt-get update
+$ROOTCMD apt-get install -y element-desktop
+
+
+
