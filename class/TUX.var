@@ -1,3 +1,5 @@
 username=tux
-USERPW=$(echo $username | mkpasswd -m yescrypt -s)
-ROOTPW=$USERPW
+#USERPW=$(echo $username | mkpasswd -m yescrypt -s)
+USERPW=
+#ROOTPW=$USERPW
+ROOTPW=
