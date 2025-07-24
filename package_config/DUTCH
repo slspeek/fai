@@ -1,5 +1,16 @@
 PACKAGES install
 task-dutch
 
-PACKAGES install GNOME
-firefox-esr-l10n-nl thunderbird-l10n-nl
+PACKAGES install XORG
+chromium-l10n
+firefox-esr-l10n-nl
+gimagereader
+hyphen-nl
+libreoffice-help-nl
+libreoffice-l10n-nl
+myspell-nl 
+task-dutch
+task-dutch-desktop
+tesseract-ocr-nld
+thunderbird-l10n-nl
+
