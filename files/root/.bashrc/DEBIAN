@@ -1,0 +1,2 @@
+alias fl='cd /var/log/fai/localhost/last'
+alias fe='cat /var/log/fai/localhost/last/error.log'
