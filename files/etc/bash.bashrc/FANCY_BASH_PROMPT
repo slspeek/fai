@@ -20,9 +20,9 @@ fi
 if ! [ -n "${SUDO_USER-}" -a -n "${SUDO_PS1-}" ]; then
   #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
   if [ "$(id -u)" -eq 0 ]; then
-    PS1_BASE='\u@\h:\w'
+    PS1_BASE='${debian_chroot:+($debian_chroot)}\u@\h:\w'
   else
-    PS1_BASE='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]'
+    PS1_BASE='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]'
   fi
   PROMPT_COMMAND='if [ $? -eq 0 ]; then PS1=$PS1_BASE\\$; else PS1=$PS1_BASE\\[\\033[01\;31m\\]\(\$?\)\*\\[\\033[00m\\]; fi; history -a'
 fi
