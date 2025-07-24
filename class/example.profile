@@ -6,7 +6,7 @@ Short: just a very simple example, no xorg, an account called demo
 Long: This is the demohost example of FAI.
 Additional account called tux with password: tux, root password: tux
 All needed packages are already on the CD or USB stick.
-Classes: INSTALL FAIBASE DUTCH DEBIAN FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS DEMO TUX 
+Classes: INSTALL FAIBASE DEBIAN DUTCH FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS DEMO TUX 
 
 Name: Xfce
 Description: Xfce desktop, LVM partitioning
@@ -14,7 +14,7 @@ Short: A fancy Xfce desktop will be installed, the user account is demo
 Long: This is the Xfce desktop example. Additional account called
 demo with password: fai, root password: fai
 All needed packages are already on the CD or USB stick.
-Classes: INSTALL FAIBASE DUTCH DEBIAN DEMO TUX XORG XFCE LVM
+Classes: INSTALL FAIBASE DEBIAN DUTCH FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS ELEMENT GOOGLE_CHROME DEMO TUX XORG XFCE LVM
 
 Name: Gnome
 Description: Gnome desktop installation
@@ -23,7 +23,7 @@ Long: This is the Gnome desktop example. Additional account called
 demo with password: fai, root password: fai
 You should have a fast network connection, because most packages are
 downloaded from the internet.
-Classes: INSTALL FAIBASE DUTCH DEBIAN DEMO TUX XORG GNOME
+Classes: INSTALL FAIBASE DEBIAN DUTCH FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS ELEMENT GOOGLE_CHROME DEMO TUX XORG GNOME
 
 Name: Alma Linux
 Description: Alma Linux 9 with Xfce desktop
@@ -55,7 +55,7 @@ Short: Mint desktop
 Long: We use the DUTCH DEBIAN nfsroot for installing the Linux Mint OS.
 You should have a fast network connection, because most packages are
 downloaded from the internet.
-Classes: INSTALL FAIBASE DEMO TUX DEBIAN UBUNTU NOBLE NOBLE64 MINT
+Classes: INSTALL FAIBASE DEMO DEBIAN UBUNTU NOBLE NOBLE64 MINT
 
 Name: Inventory
 Description: Show hardware info
