@@ -1,0 +1,5 @@
+PACKAGES install
+default-jre
+libreoffice-base
+libreoffice-java-common
+libreoffice-report-builder

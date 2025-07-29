@@ -1,3 +1,4 @@
+PACKAGES install
 gimp
 jpegoptim
 libimage-exiftool-perl
