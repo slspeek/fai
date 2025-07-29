@@ -2,15 +2,23 @@ PACKAGES install
 task-dutch
 
 PACKAGES install XORG
-chromium-l10n
-firefox-esr-l10n-nl
-gimagereader
 hyphen-nl
-libreoffice-help-nl
-libreoffice-l10n-nl
 myspell-nl 
 task-dutch
 task-dutch-desktop
+
+PACKAGES install OCR
 tesseract-ocr-nld
+
+PACKAGES install FIREFOX_ESR
+firefox-esr-l10n-nl
+
+PACKAGES install LIBREOFFICE
+libreoffice-help-nl
+libreoffice-l10n-nl
+
+PACKAGES install THUNDERBIRD
 thunderbird-l10n-nl
 
+PACKAGES install CHROMIUM
+chromium-l10n-nl

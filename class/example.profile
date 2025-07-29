@@ -14,7 +14,7 @@ Short: A fancy Xfce desktop will be installed, the user account is demo
 Long: This is the Xfce desktop example. Additional account called
 demo with password: fai, root password: fai
 All needed packages are already on the CD or USB stick.
-Classes: INSTALL FAIBASE DEBIAN DUTCH FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS ELEMENT GOOGLE_CHROME DEMO TUX XORG XFCE LVM
+Classes: INSTALL FAIBASE DEBIAN DUTCH FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS FIREFOX_ESR DEMO TUX XORG XFCE LVM
 
 Name: Gnome
 Description: Gnome desktop installation
@@ -24,6 +24,15 @@ demo with password: fai, root password: fai
 You should have a fast network connection, because most packages are
 downloaded from the internet.
 Classes: INSTALL FAIBASE DEBIAN DUTCH FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS ELEMENT GOOGLE_CHROME DEMO TUX XORG GNOME
+
+Name: Gnome complete
+Description: Gnome desktop installation
+Short: A Gnome desktop, no LVM, You will get an account called tux
+Long: This is the Gnome desktop example. Additional account called
+tux with password: tux, root password: tux
+You should have a fast network connection, because most packages are
+downloaded from the internet.
+Classes: INSTALL FAIBASE DEBIAN DUTCH FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS ELEMENT GOOGLE COMPLETE DEMO TUX XORG GNOME
 
 Name: Alma Linux
 Description: Alma Linux 9 with Xfce desktop

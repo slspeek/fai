@@ -9,6 +9,7 @@ info
 memtest86+
 netselect-apt
 patch
+ripgrep
 sudo
 tmux
 tree
