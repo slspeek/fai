@@ -9,7 +9,7 @@ else
   secsuite=$release-security
 fi
 
-CONSOLEFONT=
+CONSOLEFONT=default12x24
 KEYMAP=us-latin1
 
 # MODULESLIST contains modules that will be loaded by the new system,

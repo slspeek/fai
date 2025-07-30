@@ -1,5 +1,5 @@
 PACKAGES install
 task-german
 
-PACKAGES install GNOME
+PACKAGES install GNOME_CORE
 firefox-esr-l10n-de thunderbird-l10n-de

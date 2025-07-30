@@ -10,6 +10,9 @@ task-dutch-desktop
 PACKAGES install OCR
 tesseract-ocr-nld
 
+PACKAGES install FIREFOX
+firefox-l10n-nl
+
 PACKAGES install FIREFOX_ESR
 firefox-esr-l10n-nl
 
@@ -19,6 +22,3 @@ libreoffice-l10n-nl
 
 PACKAGES install THUNDERBIRD
 thunderbird-l10n-nl
-
-PACKAGES install CHROMIUM
-chromium-l10n-nl

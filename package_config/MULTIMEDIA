@@ -1,4 +1,4 @@
-PACKAGES install
+PACKAGES install-norec
 handbrake
 mplayer
 qbittorrent

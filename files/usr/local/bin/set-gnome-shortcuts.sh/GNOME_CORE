@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -e
+export PATH=$PATH:/usr/local/bin
+
+SHORTCUTS_DONE=$HOME/.config/set-shortcuts-done
+test -f $SHORTCUTS_DONE && exit 0
+
+set_custom_gnome_shortcut.py Terminal gnome-terminal "<Control><Alt>t"
+set_custom_gnome_shortcut.py "Afstellingen" gnome-tweaks "<Super><Shift>i"
+gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys control-center "['<Super>i']"
+set_custom_gnome_shortcut.py "Visual studio code" code "<Super>c"
+set_custom_gnome_shortcut.py "Verwissel muisknoppen" /usr/local/bin/gnome-mouse-key-toggle.sh "<Super><Control>m"
+set_custom_gnome_shortcut.py "Start screenkey" screenkey "<Super><Control>s"
+set_custom_gnome_shortcut.py "Stop screenkey" "pkill screenkey" "<Super><Shift><Control>s"
+set_custom_gnome_shortcut.py "Schermen instellingen" "gnome-control-center display" "<Super>d"
+gsettings set org.gnome.settings-daemon.plugins.media-keys decrease-text-size "['<Super>minus']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys increase-text-size "['<Super>equal']"
+mkdir -p ~/.config && echo yes > $SHORTCUTS_DONE
