@@ -1,0 +1,13 @@
+#! /bin/bash
+
+error=0; trap 'error=$(($?>$error?$?:$error))' ERR # save maximum error code
+
+fcopy /etc/dconf/profile/user
+$ROOTCMD mkdir -p /etc/dconf/db/local.d
+export browser=$(basename $(grep -l $(basename $($ROOTCMD readlink /etc/alternatives/x-www-browser)) $target/usr/share/applications/*.desktop))
+echo "Browser: $browser"
+fcopy -S /etc/dconf/db/local.d/00-favorite-apps
+fcopy /etc/dconf/db/local.d/10-shortcuts
+
+$ROOTCMD dconf update
+exit $error

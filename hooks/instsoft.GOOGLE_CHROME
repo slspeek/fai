@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [ $FAI_ACTION != "install" ] && [ $FAI_ACTION != "dirinstall" ]; then
+   exit 0
+fi
+
+$ROOTCMD extrepo enable google_chrome
+if [ X$verbose = X1 ]; then
+	$ROOTCMD apt-get update
+else
+	$ROOTCMD apt-get update > /dev/null
+fi

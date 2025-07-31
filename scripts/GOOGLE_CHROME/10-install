@@ -1,7 +1,0 @@
-#! /bin/bash
-
-set -e
-
-$ROOTCMD extrepo enable google_chrome
-$ROOTCMD apt-get update
-$ROOTCMD apt-get install -y google-chrome-stable

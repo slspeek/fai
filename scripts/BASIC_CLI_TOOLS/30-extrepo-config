@@ -1,5 +1,0 @@
-#! /bin/bash
-
-set -e
-fai-sed '/- non-free/ s/^# //' /etc/extrepo/config.yaml
-fai-sed '/- contrib/ s/^# //' /etc/extrepo/config.yaml

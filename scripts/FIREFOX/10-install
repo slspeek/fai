@@ -1,7 +1,0 @@
-#! /bin/bash
-
-set -e
-
-$ROOTCMD extrepo enable mozilla
-$ROOTCMD apt-get update
-$ROOTCMD apt-get install -y firefox

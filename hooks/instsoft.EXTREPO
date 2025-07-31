@@ -1,0 +1,9 @@
+#! /bin/bash
+
+if [ $FAI_ACTION != "install" ] && [ $FAI_ACTION != "dirinstall" ]; then
+   exit 0
+fi
+
+$ROOTCMD apt-get -y install extrepo
+fai-sed '/- non-free/ s/^# //' /etc/extrepo/config.yaml
+fai-sed '/- contrib/ s/^# //' /etc/extrepo/config.yaml
