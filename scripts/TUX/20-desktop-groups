@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+set -e
+
+if ifclass XORG; then
+  $ROOTCMD usermod -aG cdrom,floppy,audio,dip,video,plugdev,users,netdev,scanner,bluetooth,lpadmin $username
+fi

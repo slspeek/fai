@@ -6,6 +6,7 @@ curl
 debconf-utils
 extrepo
 info
+locate
 memtest86+
 netselect-apt
 patch
