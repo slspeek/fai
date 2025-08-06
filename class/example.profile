@@ -6,15 +6,15 @@ Short: just a very simple example, no xorg, an account called demo
 Long: This is the demohost example of FAI.
 Additional account called tux with password: tux, root password: tux
 All needed packages are already on the CD or USB stick.
-Classes: INSTALL FAIBASE DEBIAN FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS DEMO TUX 
+Classes: INSTALL FAIBASE DEBIAN CONSOLE_TWEAKS ADVANCED_CLI_TOOLS TUX 
 
-Name: Xfce
+Name: Xfce minimaal
 Description: Xfce desktop, LVM partitioning
 Short: A fancy Xfce desktop will be installed, the user account is demo
 Long: This is the Xfce desktop example. Additional account called
 demo with password: fai, root password: fai
 All needed packages are already on the CD or USB stick.
-Classes: INSTALL FAIBASE DEBIAN DUTCH FANCY_BASH_PROMPT CONSOLE_LARGE_FONT BASIC_CLI_TOOLS FIREFOX_ESR UNATTENDED_UPGRADES DEMO TUX XORG XFCE LVM
+Classes: INSTALL FAIBASE DEBIAN DUTCH CONSOLE_TWEAKS ADVANCED_CLI_TOOLS FIREFOX TUX XFCE_CORE VLC LVM
 
 Name: Gnome
 Description: Gnome desktop installation

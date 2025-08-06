@@ -13,7 +13,6 @@ curl
 debconf-utils
 entr
 espeak
-exa
 fd-find
 figlet
 fzf
@@ -34,7 +33,6 @@ mc
 mediainfo
 ncal
 ncdu
-neofetch 
 nload
 nmap
 nnn 
@@ -46,7 +44,6 @@ ripgrep
 rsync
 sl
 tcpdump
-tldr
 traceroute
 unrar
 whois
