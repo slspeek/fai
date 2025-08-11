@@ -14,7 +14,7 @@ Short: A fancy Xfce desktop will be installed, the user account is demo
 Long: This is the Xfce desktop example. Additional account called
 demo with password: fai, root password: fai
 All needed packages are already on the CD or USB stick.
-Classes: INSTALL FAIBASE DEBIAN DUTCH CONSOLE_TWEAKS ADVANCED_CLI_TOOLS FIREFOX TUX XFCE_CORE VLC LVM
+Classes: INSTALL FAIBASE DEBIAN DUTCH CONSOLE_TWEAKS ADVANCED_CLI_TOOLS MATTERMOST FIREFOX TUX XFCE_CORE VLC LVM
 
 Name: Gnome
 Description: Gnome desktop installation

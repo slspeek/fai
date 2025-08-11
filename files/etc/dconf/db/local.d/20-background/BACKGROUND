@@ -1,0 +1,10 @@
+[org/cinnamon/desktop/background]
+picture-uri "file://{%WALLPAPER%}"
+picture-options "zoom"
+
+[org/gnome/desktop/background]
+picture-uri "file://{%WALLPAPER%}"
+picture-options "zoom"
+
+[org/mate/background]
+picture-filename {%WALLPAPER%}

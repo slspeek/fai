@@ -204,7 +204,12 @@ fi
 # Here you can define your own patterns. Put one pattern in a line,
 # do not create empty lines.
 myerrorpatterns="X_X-X_XX"
-myignorepatterns="X_X-X_XX"
+myignorepatterns="WARNING: \$NIC1 is not defined. Cannot add ethernet to /etc/network/interfaces.
+shred: '.*/etc/ssh/ssh_host_\*': failed to open for writing: No such file or directory
+Updating grub failed, report success anyway!
+warn: The home directory .* already exists.  Not touching this directory.
+SERVER not defined. Can't change network boot configuration
+Failed to open connection to \"system\" message bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # The main routine
 errorpatterns="$globalerrorpatterns
@@ -228,5 +233,5 @@ if [ -s $errfile ]; then
    echo "ERRORS found in log files. See $errfile" >&2
 else
    echo "Congratulations! No errors found in log files."
-#   export flag_reboot=1 # if you want to reboot if no errors are found
+   export flag_reboot=1 # if you want to reboot if no errors are found
 fi

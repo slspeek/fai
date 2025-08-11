@@ -2,5 +2,11 @@
 set -e
 
 if ifclass XORG; then
-  $ROOTCMD usermod -aG cdrom,floppy,audio,dip,video,plugdev,users,netdev,scanner,bluetooth,lpadmin $username
+  $ROOTCMD usermod -aG cdrom,floppy,audio,dip,video,plugdev,users,netdev $username
+  for group in lpadmin scanner bluetooth; do
+    if $ROOTCMD getent group $group >/dev/null; then
+      $ROOTCMD usermod -aG $group $username
+      echo "Added user $username to group $group"
+    fi
+  done
 fi

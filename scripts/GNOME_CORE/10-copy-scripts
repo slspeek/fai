@@ -2,8 +2,6 @@
 
 error=0; trap 'error=$(($?>$error?$?:$error))' ERR # save maximum error code
 
-fcopy /usr/local/bin/set_custom_gnome_shortcut.py
-fcopy /usr/local/bin/set-gnome-shortcuts.sh
 fcopy /usr/local/bin/gnome-mouse-key-toggle.sh
 
 exit $error

@@ -1,7 +1,7 @@
 PACKAGES install-norec
 
 # the list of standard packages, without any libs and a few packages removed
-apt-listchanges
+# apt-listchanges ! python problems
 bash-completion
 bind9-host
 bind9-dnsutils
