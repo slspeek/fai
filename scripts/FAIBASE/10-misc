@@ -19,6 +19,10 @@ if [ -n "$IPADDR" ]; then
 else
     ifclass DHCPC && ainsl -s /etc/hosts "127.0.0.1 $HOSTNAME"
 fi
+
+# if DHCP is used, add hostname to /etc/hosts
+ifclass DHCPC && ainsl -s /etc/hosts "127.0.0.1 $HOSTNAME"
+
 fcopy -iM /etc/hosts /etc/motd
 
 # make /root accessible only by root
