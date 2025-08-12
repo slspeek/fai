@@ -1,0 +1,5 @@
+#!/bin/bash
+
+error=0; trap 'error=$(($?>$error?$?:$error))' ERR # save maximum error code
+
+$ROOTCMD ln -s /usr/local/share/wallpaper/wallpaper-file $WALLPAPER_DIRECTORY/$WALLPAPER_FILENAME

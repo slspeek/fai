@@ -1,1 +1,3 @@
-WALLPAPER=/usr/local/share/wallpaper/default-wallpaper
+WALLPAPER_FILENAME=Noord-Hollands-Duinreservaat.jpg
+
+WALLPAPER_DIRECTORY=/usr/local/share/wallpaper
