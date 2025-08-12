@@ -5,6 +5,9 @@ error=0; trap 'error=$(($?>$error?$?:$error))' ERR # save maximum error code
 fcopy /etc/dconf/profile/user
 $ROOTCMD mkdir -p /etc/dconf/db/local.d
 export browser=$(basename $(grep -l $(basename $($ROOTCMD readlink /etc/alternatives/x-www-browser)) $target/usr/share/applications/*.desktop))
+if [ "$browser" = "com.google.Chrome.desktop" ]; then
+    export browser="google-chrome.desktop"
+fi
 echo "Browser: $browser"
 fcopy -S -r -v -i /etc/dconf/db/local.d/
 
