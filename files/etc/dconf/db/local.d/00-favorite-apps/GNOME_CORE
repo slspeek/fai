@@ -1,2 +1,2 @@
 [org/gnome/shell]
-favorite-apps = ['{%browser%}', 'nautilus.desktop', 'libreoffice-writer.desktop','vlc.desktop']
+favorite-apps = ['{%browser%}', 'mattermost-desktop.desktop', 'nautilus.desktop', 'libreoffice-writer.desktop','vlc.desktop']
