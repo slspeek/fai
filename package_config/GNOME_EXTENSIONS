@@ -1,0 +1,12 @@
+PACKAGES install-norec
+chrome-gnome-shell
+gnome-shell-extension-manager
+gnome-shell-extension-appindicator
+gnome-shell-extension-dashtodock
+gnome-shell-extension-freon
+gnome-shell-extension-gsconnect
+gnome-shell-extension-tiling-assistant
+gnome-shell-extension-runcat
+
+
+

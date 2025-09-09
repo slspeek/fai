@@ -1,0 +1,5 @@
+[org/gnome/shell]
+enabled-extensions=['runcat@kolesnikov.se', 'ubuntu-appindicators@ubuntu.com', 'gsconnect@andyholmes.github.io']
+
+[org/gnome/shell/extensions/runcat]
+displaying-items='percentage-only'
