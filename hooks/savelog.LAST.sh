@@ -209,7 +209,8 @@ shred: '.*/etc/ssh/ssh_host_\*': failed to open for writing: No such file or dir
 Updating grub failed, report success anyway!
 warn: The home directory .* already exists.  Not touching this directory.
 SERVER not defined. Can't change network boot configuration
-Failed to open connection to \"system\" message bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory"
+Failed to open connection to \"system\" message bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+Failed to check for processor microcode upgrades."
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # The main routine
 errorpatterns="$globalerrorpatterns
