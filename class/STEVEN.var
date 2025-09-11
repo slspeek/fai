@@ -1,0 +1,5 @@
+username=steven
+#USERPW=$(echo $username | mkpasswd -m yescrypt -s)
+USERPW=
+#ROOTPW=$USERPW
+ROOTPW=
