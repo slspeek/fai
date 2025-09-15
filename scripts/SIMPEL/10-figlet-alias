@@ -1,0 +1,3 @@
+#!/bin/bash
+
+$ROOTCMD sh -c 'echo "alias auto=\"figlet -f big Automatiseer je Linux installatie en configuratie\"" >> /etc/skel/.bash_aliases'
