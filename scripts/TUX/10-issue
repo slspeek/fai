@@ -1,3 +1,0 @@
-#! /bin/bash
-
-$ROOTCMD linuxlogo -t "${username^}'s computer" > $target/etc/issue
