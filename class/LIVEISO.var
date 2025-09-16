@@ -1,0 +1,4 @@
+if ifclass SIMPEL; then
+    # For VM demo of live Simpel profile
+    NIC1=eth0
+fi
