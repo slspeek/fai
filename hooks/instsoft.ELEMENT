@@ -1,0 +1,8 @@
+#! /bin/bash
+
+if [ $FAI_ACTION != "install" ] && [ $FAI_ACTION != "dirinstall" ]; then
+   exit 0
+fi
+
+$ROOTCMD extrepo enable element.io
+
