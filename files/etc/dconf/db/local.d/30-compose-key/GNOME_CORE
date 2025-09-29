@@ -1,3 +1,3 @@
 [org/gnome/desktop/input-sources]
 sources=[('xkb', 'us')]
-xkb-options=['compose:ralt']
+xkb-options=['ctrl:nocaps', 'terminate:ctrl_alt_bksp', 'compose:ralt']
