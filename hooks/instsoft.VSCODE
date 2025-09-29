@@ -5,8 +5,3 @@ if [ $FAI_ACTION != "install" ] && [ $FAI_ACTION != "dirinstall" ]; then
 fi
 
 $ROOTCMD extrepo enable vscode
-if [ X$verbose = X1 ]; then
-	$ROOTCMD apt-get update
-else
-	$ROOTCMD apt-get update > /dev/null
-fi
