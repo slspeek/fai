@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -e
+
+OLD_USER="$1"
+NEW_USER="$2"
+
+if [ -z "$OLD_USER" ] || [ -z "$NEW_USER" ]; then
+    echo "Usage: $0 <old-username> <new-username>"
+    exit 1
+fi
+
+usermod --login "$NEW_USER" --move-home --home "/home/$NEW_USER" "$OLD_USER"
+groupmod --new-name "$NEW_USER" "$OLD_USER"
+chfn --full-name "${NEW_USER^}" "$NEW_USER"
+echo "$NEW_USER:$NEW_USER" | chpasswd
+if [ -d /media/"$OLD_USER" ]; then
+    rmdir -v /media/"$OLD_USER" 
+fi
+
