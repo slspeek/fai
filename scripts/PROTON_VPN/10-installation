@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+VERSION=1.0.8
+
+PROTON_VPN_DEB=protonvpn-stable-release_${VERSION}_all.deb
+$ROOTCMD wget https://repo.protonvpn.com/debian/dists/stable/main/binary-all/$PROTON_VPN_DEB -P /tmp
+$ROOTCMD dpkg -i /tmp/$PROTON_VPN_DEB
+$ROOTCMD apt-get update
+$ROOTCMD apt-get install --yes proton-vpn-gnome-desktop
+$ROOTCMD rm /tmp/$PROTON_VPN_DEB
