@@ -1,2 +1,63 @@
 PACKAGES install
+easy-rsa
+libbpfcc
+libcares2
+libccid
+libclang-cpp19
+libeac3
+libpkcs11-helper1t64
+linux-image-amd64
+linux-headers-amd64
+network-manager-openvpn
+network-manager-openvpn-gnome
+opensc
+opensc-pkcs11
+openvpn
+pahole
+pcscd
+# proton-vpn-daemon
+# proton-vpn-gtk-app
+python-babel-localedata
+python3-aiodns
+python3-aiohappyeyeballs
+python3-aiohttp
+python3-aiosignal
+python3-async-timeout
+python3-attr
+python3-babel
+python3-bcrypt
+python3-bpfcc
+python3-cffi-backend
+python3-cryptography
+python3-dbus-fast
+python3-fido2
+python3-frozenlist
+python3-gnupg
+python3-importlib-metadata
+python3-jaraco.classes
+python3-jaraco.context
+python3-jaraco.functools
+python3-jeepney
+python3-jinja2
+python3-keyring
+python3-markupsafe
+python3-more-itertools
+python3-multidict
+python3-nacl
+python3-openssl
+python3-packaging
+python3-propcache
+# python3-proton-core
+# python3-proton-keyring-linux
+# python3-proton-vpn-api-core
+# python3-proton-vpn-lib
+# python3-proton-vpn-local-agent
+# python3-proton-vpn-network-manager
+python3-pycares
+python3-secretstorage
+python3-sentry-sdk
+python3-systemd
+python3-yarl
+python3-zipp
 wget
+wireguard-tools
