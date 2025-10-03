@@ -3,7 +3,3 @@ xserver-xorg-video-all xserver-xorg-input-all
 fonts-freefont-ttf
 desktop-base
 
-PACKAGES install UBUNTU
-ubuntu-server-
-ubuntu-standard
-ubuntu-desktop
