@@ -1,2 +1,4 @@
 PACKAGES install
+cups
+cups-pk-helper
 printer-driver-all
