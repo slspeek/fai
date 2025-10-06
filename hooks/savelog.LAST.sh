@@ -211,7 +211,8 @@ warn: The home directory .* already exists.  Not touching this directory.
 SERVER not defined. Can't change network boot configuration
 Failed to open connection to \"system\" message bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
 Failed to check for processor microcode upgrades.
-can't claim; no compatible bridge window"
+can't claim; no compatible bridge window
+grep: /etc/init.d/rustdesk: No such file or directory"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # The main routine
 errorpatterns="$globalerrorpatterns

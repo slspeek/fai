@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+VERSION=1.4.2
+RUSTDESK_DEB=rustdesk-${VERSION}-x86_64.deb
+$ROOTCMD wget --no-verbose https://github.com/rustdesk/rustdesk/releases/download/${VERSION}/$RUSTDESK_DEB -P /tmp
+$ROOTCMD apt-get install --yes /tmp/$RUSTDESK_DEB
+$ROOTCMD rm /tmp/$RUSTDESK_DEB
