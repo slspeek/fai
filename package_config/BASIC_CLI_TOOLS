@@ -12,6 +12,7 @@ netselect-apt
 patch
 ripgrep
 sudo
+tealdeer
 tmux
 tree
 vim
