@@ -7,8 +7,8 @@ Classes: INSTALL FAIBASE DEBIAN CONSOLE_TWEAKS SIMPEL TUX
 Name: Xfce minimaal
 Description: Xfce desktop, LVM partitioning
 Short: XFCE desktop met LVM. Met account tux, zonder wachtwoord.
-Long: Dit is de Xfce desktop met Firefox en VLC. LVM partitionering.
-Classes: INSTALL FAIBASE DEBIAN DUTCH CONSOLE_TWEAKS MATTERMOST FIREFOX TUX XFCE_CORE VLC LVM
+Long: Dit is de Xfce desktop. LVM partitionering.
+Classes: INSTALL FAIBASE DEBIAN DUTCH CONSOLE_TWEAKS TUX XFCE_CORE LVM
 
 Name: Inventory
 Description: Show hardware info
