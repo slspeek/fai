@@ -1,2 +1,6 @@
 PACKAGES install
 vlc
+
+PACKAGES remove
+totem
+showtime
