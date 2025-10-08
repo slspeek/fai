@@ -1,0 +1,3 @@
+#!/bin/bash
+
+fcopy -S -m mirror,mirror,0755 /home/mirror/bin/update-mirror.sh

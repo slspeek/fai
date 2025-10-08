@@ -1,0 +1,2 @@
+MIRROR_FROM=mirrors.xtom.nl
+ifclass INSTALL && HOSTNAME=mirror

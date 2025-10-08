@@ -1,0 +1,5 @@
+#!/bin/bash
+
+fcopy -m mirror,mirror,0644 /home/mirror/crontab.mirror
+$ROOTCMD crontab -u mirror /home/mirror/crontab.mirror
+

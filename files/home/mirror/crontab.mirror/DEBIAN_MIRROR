@@ -1,0 +1,3 @@
+00 00 * * * /home/mirror/bin/update-mirror.sh
+00 14 * * * /home/mirror/bin/update-mirror.sh
+00 21 * * * /home/mirror/bin/update-mirror.sh

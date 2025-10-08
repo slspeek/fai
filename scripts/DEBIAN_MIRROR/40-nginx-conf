@@ -1,0 +1,10 @@
+#!/bin/bash
+set -ex
+
+fcopy -M /etc/nginx/sites-available/mirror
+
+LINK_TARGET=/etc/nginx/sites-enabled/mirror
+if ! $ROOTCMD test -L $LINK_TARGET;
+then
+ $ROOTCMD ln -s /etc/nginx/sites-available/mirror $LINK_TARGET
+fi
