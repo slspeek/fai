@@ -2,7 +2,7 @@ Name: Simpel
 Description: Simpele installatie, geen xorg, account tux
 Short: Simpele test installatie
 Long: Simpele installatie, geen xorg, account tux zonder wachtwoord.
-Classes: INSTALL FAIBASE DEBIAN CONSOLE_TWEAKS SIMPEL TUX 
+Classes: INSTALL FAIBASE DEBIAN CONSOLE_TWEAKS SIMPEL TUX
 
 Name: Xfce minimaal
 Description: Xfce desktop, LVM partitioning

@@ -1,0 +1,9 @@
+#!/bin/bash
+set -e
+
+if ifclass DUTCH; then
+    COUNTRY_OPTS="--country nl";
+fi
+
+$ROOTCMD netselect-apt $COUNTRY_OPTS --nonfree --outfile /etc/apt/sources.list
+$ROOTCMD apt-get update
