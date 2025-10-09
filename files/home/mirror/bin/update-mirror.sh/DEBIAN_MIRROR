@@ -9,7 +9,6 @@ COMMON_OPTS=$(cat <<-EOF
   --verbose 
   --progress 
   --exclude=-dbg_* 
-  --rsync-extra=none 
   --nosource 
   --method=http 
   --i18n 
