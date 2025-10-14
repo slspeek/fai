@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+VERSION=1.9.9.6
+
+EXTENSION_DOWNLOAD_URL=https://addons.mozilla.org/firefox/downloads/file/4575368/keepassxc_browser-${VERSION}.xpi
+
+$ROOTCMD /usr/local/bin/install-mozilla-extension-system-wide.sh $EXTENSION_DOWNLOAD_URL keepassxc-browser@keepassxc.org
