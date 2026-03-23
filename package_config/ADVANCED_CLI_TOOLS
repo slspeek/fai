@@ -13,6 +13,7 @@ curl
 debconf-utils
 entr
 espeak
+fastfetch
 fd-find
 figlet
 fzf
@@ -24,6 +25,7 @@ iftop
 inxi
 ipcalc
 iptraf
+lazygit
 lftp
 linuxlogo
 lnav
@@ -43,6 +45,7 @@ rclone
 ripgrep
 rsync
 sl
+starship
 tcpdump
 traceroute
 unrar
@@ -52,4 +55,5 @@ xdotool
 xine-console
 yt-dlp
 zip
+zsh
 zoxide
