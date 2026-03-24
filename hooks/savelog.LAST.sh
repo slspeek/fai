@@ -212,7 +212,11 @@ SERVER not defined. Can't change network boot configuration
 Failed to open connection to \"system\" message bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
 Failed to check for processor microcode upgrades.
 can't claim; no compatible bridge window
-grep: /etc/init.d/rustdesk: No such file or directory"
+grep: /etc/init.d/rustdesk: No such file or directory
+[.*] platform regulatory.0: firmware: failed to load regulatory.db (-2)
+[.*] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[.*] cfg80211: failed to load regulatory.db
+W: OpenPGP signature verification failed: http://fai-project.org/download trixie InRelease: Sub-process .*"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # The main routine
 errorpatterns="$globalerrorpatterns
