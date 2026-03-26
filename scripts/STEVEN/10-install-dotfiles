@@ -1,0 +1,8 @@
+#!/bin/bash
+
+$ROOTCMD sudo -u steven sh -c '\
+    git clone https://github.com/slspeek/dotfiles.git ~/.dotfiles && \
+    cd ~/.dotfiles && \
+    tldr --update && \
+    stow -v --dotfiles --adopt . && \
+    git restore . '
