@@ -30,6 +30,7 @@ lftp
 linuxlogo
 lnav
 locate
+lsd
 lshw
 mc
 mediainfo
@@ -46,8 +47,10 @@ ripgrep
 rsync
 sl
 starship
+stow
 tcpdump
 traceroute
+trash-cli
 unrar
 whois
 wmctrl
