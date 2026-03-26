@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+if $ROOTCMD update-alternatives --set editor /usr/bin/nvim; then
+	echo "The default editor is nvim now.";
+else
+	echo "Not able to set nvim as default editor (is nvim installed?)";
+fi
