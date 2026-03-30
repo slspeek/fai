@@ -26,6 +26,7 @@ iftop
 inxi
 ipcalc
 iptraf
+just
 lazygit
 lftp
 linuxlogo
@@ -46,6 +47,8 @@ rar
 rclone
 ripgrep
 rsync
+shfmt
+shellcheck
 sl
 starship
 stow
