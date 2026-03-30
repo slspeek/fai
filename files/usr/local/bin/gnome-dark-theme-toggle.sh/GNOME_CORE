@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+
+key="org.gnome.desktop.interface color-scheme"
+current=$(gsettings get $key)
+
+if [ "$current" == "'default'" ]; then
+  gsettings set $key 'prefer-dark'
+else
+  gsettings set $key 'default'
+fi
