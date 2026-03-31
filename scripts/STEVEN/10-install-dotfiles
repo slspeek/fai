@@ -9,5 +9,5 @@ install_dotfiles() {
     git restore . 
 }
     
-$ROOTCMD sudo -u steven bash -c "$(declare -f install_dotfiles); install_dotfiles"
+$ROOTCMD sudo -u $(id -nu 1000) bash -c "$(declare -f install_dotfiles); install_dotfiles"
     
