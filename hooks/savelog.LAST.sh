@@ -217,7 +217,8 @@ grep: /etc/init.d/rustdesk: No such file or directory
 \[.*\] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
 \[.*\] cfg80211: failed to load regulatory.db
 W: OpenPGP signature verification failed: http://fai-project.org/download trixie InRelease: Sub-process .*
-unshare: unshare failed: Operation not permitted"
+unshare: unshare failed: Operation not permitted
+10.0.2.2: command not found"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # The main routine
 errorpatterns="$globalerrorpatterns
