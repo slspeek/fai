@@ -7,4 +7,5 @@ LINK_TARGET=/etc/nginx/sites-enabled/mirror
 if ! $ROOTCMD test -L $LINK_TARGET;
 then
  $ROOTCMD ln -s /etc/nginx/sites-available/mirror $LINK_TARGET
+ $ROOTCMD rm -f /etc/nginx/sites-enabled/default
 fi
