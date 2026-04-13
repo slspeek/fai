@@ -1,4 +1,5 @@
 PACKAGES install-norec 
+apg
 apt-file
 aptitude
 bash-completion
