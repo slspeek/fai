@@ -12,6 +12,7 @@ memtest86+
 netselect-apt
 patch
 ripgrep
+smartmontools
 sudo
 tealdeer
 tmux
