@@ -1,5 +1,6 @@
 PACKAGES install
 task-gnome-desktop
+gnome-usage
 
 PACKAGES remove
 gnome-tour
