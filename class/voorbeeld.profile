@@ -4,6 +4,12 @@ Short: Simpele test installatie
 Long: Simpele installatie, geen xorg, account tux zonder wachtwoord.
 Classes: INSTALL FAIBASE DEBIAN CONSOLE_TWEAKS SIMPEL TUX
 
+Name: Simpel Btrfs
+Description: Simpele installatie, geen xorg, account tux
+Short: Simpele test installatie voor Btrfs
+Long: Simpele installatie, geen xorg, account tux zonder wachtwoord.
+Classes: INSTALL FAIBASE BTRFS_ONE DEBIAN CONSOLE_TWEAKS SIMPEL TUX
+
 Name: Xfce minimaal
 Description: Xfce desktop, LVM partitioning
 Short: XFCE desktop met LVM. Met account tux, zonder wachtwoord.

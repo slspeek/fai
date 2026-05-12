@@ -5,5 +5,5 @@
 disk_config disk1 disklabel:gpt bootable:1 fstabkey:uuid
 
 p=efi  /boot/efi 512M  vfat  rw
-p=root /      2G-   btrfs  rw,noatime,errors=remount-ro
+p=root /      2G-   btrfs  rw,noatime,subvol=@/
 p=     swap   200-10G  swap  sw
