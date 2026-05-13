@@ -2,19 +2,19 @@
 
 set -e
 
-OLD_USER="$1"
-NEW_USER="$2"
+old_user="$1"
+new_user="$2"
 
-if [ -z "$OLD_USER" ] || [ -z "$NEW_USER" ]; then
+if [ -z "$old_user" ] || [ -z "$new_user" ]; then
     echo "Usage: $0 <old-username> <new-username>"
     exit 1
 fi
 
-usermod --login "$NEW_USER" --move-home --home "/home/$NEW_USER" "$OLD_USER"
-groupmod --new-name "$NEW_USER" "$OLD_USER"
-chfn --full-name "${NEW_USER^}" "$NEW_USER"
-echo "$NEW_USER:$NEW_USER" | chpasswd
-if [ -d /media/"$OLD_USER" ]; then
-    rmdir -v /media/"$OLD_USER" 
+usermod --login "$new_user" --move-home --home "/home/$new_user" "$old_user"
+groupmod --new-name "$new_user" "$old_user"
+chfn --full-name "${new_user^}" "$new_user"
+echo "$new_user:$new_user" | chpasswd
+if [ -d /media/"$old_user" ]; then
+    rmdir -v /media/"$old_user" 
 fi
 
