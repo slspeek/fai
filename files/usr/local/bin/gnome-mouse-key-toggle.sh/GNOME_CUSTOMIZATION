@@ -6,6 +6,8 @@ current=$(gsettings get $key)
 
 if [ "$current" == "true" ]; then
   gsettings set $key false
+  notify-send "Mouse/Keyboard Toggle" "Switched to right-handed mode"
 else
   gsettings set $key true
+  notify-send "Mouse/Keyboard Toggle" "Switched to left-handed mode"
 fi

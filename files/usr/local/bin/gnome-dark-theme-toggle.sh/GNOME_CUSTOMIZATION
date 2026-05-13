@@ -6,6 +6,8 @@ current=$(gsettings get $key)
 
 if [ "$current" == "'default'" ]; then
   gsettings set $key 'prefer-dark'
+  notify-send "Theme" "Switched to dark theme"
 else
   gsettings set $key 'default'
+  notify-send "Theme" "Switched to light theme"
 fi
