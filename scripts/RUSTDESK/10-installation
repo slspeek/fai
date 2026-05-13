@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-VERSION=$(curl -s https://api.github.com/repos/rustdesk/rustdesk/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
-RUSTDESK_DEB=rustdesk-${VERSION}-x86_64.deb
-$ROOTCMD wget --no-verbose "https://github.com/rustdesk/rustdesk/releases/download/${VERSION}/${RUSTDESK_DEB}" -P /tmp
-$ROOTCMD apt-get install --yes "/tmp/${RUSTDESK_DEB}"
-$ROOTCMD rm "/tmp/${RUSTDESK_DEB}"
+version=$(curl -s https://api.github.com/repos/rustdesk/rustdesk/releases/latest | grep tag_name | cut -d '"' -f 4 | sed 's/v//')
+rustdesk_deb=rustdesk-${version}-x86_64.deb
+$ROOTCMD wget --no-verbose "https://github.com/rustdesk/rustdesk/releases/download/${version}/${rustdesk_deb}" -P /tmp
+$ROOTCMD apt-get install --yes "/tmp/${rustdesk_deb}"
+$ROOTCMD rm "/tmp/${rustdesk_deb}"
