@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+
+fcopy /usr/local/bin/reinstall-zellij.sh

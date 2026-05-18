@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+version=$(curl -s https://api.github.com/repos/zellij-org/zellij/releases/latest | grep tag_name | cut -d '"' -f 4)
+zellij_archive=zellij-x86_64-unknown-linux-musl.tar.gz
+tmp_dir=$(mktemp -d)
+wget --no-verbose "https://github.com/zellij-org/zellij/releases/download/${version}/${zellij_archive}" -P "${tmp_dir}"
+tar -xzf "${tmp_dir}/${zellij_archive}" -C /usr/local/bin
+chmod +x /usr/local/bin/zellij
+rm "${tmp_dir}/${zellij_archive}"
+rm -rf "${tmp_dir}"
