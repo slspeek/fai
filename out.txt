@@ -1,3 +1,0 @@
-fai. log: unshare: ~unshare failed: : Operation not permitted
-fai.log:unshare: unshare failed: Operation not permitted
-fai.log:WARNING: These unknown packages are removed from the installation list: zutty-
