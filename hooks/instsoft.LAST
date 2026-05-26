@@ -4,7 +4,7 @@ if [ $FAI_ACTION != "install" ] && [ $FAI_ACTION != "dirinstall" ]; then
    exit 0
 fi
 
-if ifclass EXTREPO; then
+if ifclass EXTREPO || ifclass BACKPORTS; then
 	if [ X$verbose = X1 ]; then
 		$ROOTCMD apt-get update
 	else
