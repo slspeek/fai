@@ -218,7 +218,9 @@ grep: /etc/init.d/rustdesk: No such file or directory
 \[.*\] cfg80211: failed to load regulatory.db
 W: OpenPGP signature verification failed: http://fai-project.org/download trixie InRelease: Sub-process .*
 unshare: unshare failed: Operation not permitted
-10.0.2.2: command not found"
+10.0.2.2: command not found
+Failed to query local AF_VSOCK CID: Cannot assign requested address
+/usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1."
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # The main routine
 errorpatterns="$globalerrorpatterns
