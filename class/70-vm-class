@@ -1,0 +1,5 @@
+#! /bin/bash
+
+if systemd-detect-virt -q; then
+	echo VM
+fi
