@@ -1,0 +1,9 @@
+PACKAGES install-norec
+sddm
+
+PACKAGES install
+kitty
+dolphin
+waybar
+dunst
+wofi

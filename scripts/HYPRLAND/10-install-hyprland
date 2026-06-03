@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+
+$ROOTCMD apt-get install --quiet --yes -t trixie-backports \
+	hyprland \
+	wayland-protocols \
+	xdg-desktop-portal-hyprland \
+	hyprland-backgrounds \
+	hyprlauncher

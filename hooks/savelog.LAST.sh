@@ -242,6 +242,9 @@ fi
 
 if [ -s $errfile ]; then
    echo "ERRORS found in log files. See $errfile" >&2
+   echo "-------------------------------------------------------------" >&2
+   cat $errfile >&2
+   echo "-------------------------------------------------------------" >&2
 else
    echo "Congratulations! No errors found in log files."
    export flag_reboot=1 # if you want to reboot if no errors are found
