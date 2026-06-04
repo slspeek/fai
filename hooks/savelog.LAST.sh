@@ -220,7 +220,8 @@ W: OpenPGP signature verification failed: http://fai-project.org/download trixie
 unshare: unshare failed: Operation not permitted
 10.0.2.2: command not found
 Failed to query local AF_VSOCK CID: Cannot assign requested address
-/usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1."
+/usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
+libxcb-errors0"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # The main routine
 errorpatterns="$globalerrorpatterns
