@@ -21,12 +21,12 @@ else
     fai-sed 's:^UTC$:LOCAL:' /etc/adjtime
 fi
 
-# enable linuxlogo
-if [ -f $target/etc/inittab ]; then
-    fai-sed 's#/sbin/getty 38400#/sbin/getty -f /etc/issue.linuxlogo 38400#' /etc/inittab
-elif [ -f $target/lib/systemd/system/getty@.service ]; then
-    fai-sed 's#ExecStart=-/sbin/agetty -o #ExecStart=-/sbin/agetty -f /etc/issue.linuxlogo -o #' /lib/systemd/system/getty@.service
-fi
+# # enable linuxlogo
+# if [ -f $target/etc/inittab ]; then
+#     fai-sed 's#/sbin/getty 38400#/sbin/getty -f /etc/issue.linuxlogo 38400#' /etc/inittab
+# elif [ -f $target/lib/systemd/system/getty@.service ]; then
+#     fai-sed 's#ExecStart=-/sbin/agetty -o #ExecStart=-/sbin/agetty -f /etc/issue.linuxlogo -o #' /lib/systemd/system/getty@.service
+# fi
 
 # make sure a machine-id exists
 if [ ! -f $target/etc/machine-id ]; then

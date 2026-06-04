@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Enable the Fastfetch service
+$ROOTCMD systemctl daemon-reload
+$ROOTCMD systemctl enable fastfetch.service

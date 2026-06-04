@@ -1,0 +1,3 @@
+#! /bin/bash
+
+fcopy /etc/systemd/system/fastfetch.service

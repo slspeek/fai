@@ -1,0 +1,11 @@
+[Unit]
+Description=Generate System Info for agetty
+Before=getty.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'fastfetch --pipe false --config /etc/fastfetch/config.jsonc > /etc/issue'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
