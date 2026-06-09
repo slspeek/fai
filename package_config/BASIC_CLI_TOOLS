@@ -10,6 +10,7 @@ info
 locate
 memtest86+
 netselect-apt
+nvidia-detect
 patch
 ripgrep
 smartmontools
