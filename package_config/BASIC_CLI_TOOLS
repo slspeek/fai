@@ -15,6 +15,7 @@ patch
 ripgrep
 smartmontools
 sudo
+systemd-timesyncd
 tealdeer
 tmux
 tree
