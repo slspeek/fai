@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+dolphin webdav://127.0.0.1:9843 &> /dev/null &
