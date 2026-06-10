@@ -5,7 +5,6 @@ debconf-utils
 file
 zstd
 less
-linuxlogo
 rsync
 openssh-client
 time

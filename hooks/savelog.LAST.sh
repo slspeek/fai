@@ -140,7 +140,6 @@ process \`kudzu' used the deprecated sysctl system call
 PM: Resume from disk failed
 JBD: barrier-based sync failed
 aufs: module is from the staging directory, the quality is unknown
-warning: linuxlogo stop runlevel arguments (none) do not match
 insserv: warning: script .\+ missing LSB tags and overrides
 live-premount.\+ If this fails
 cannot read table of mounted file systems
