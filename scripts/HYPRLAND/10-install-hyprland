@@ -6,4 +6,6 @@ $ROOTCMD apt-get install --quiet --yes -t trixie-backports \
 	wayland-protocols \
 	xdg-desktop-portal-hyprland \
 	hyprland-backgrounds \
-	hyprlauncher
+	hyprlauncher \
+	hyprland-guiutils \
+	hyprpaper
