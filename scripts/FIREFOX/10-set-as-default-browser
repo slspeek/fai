@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+
+# $ROOTCMD xdg-settings set default-web-browser firefox.desktop
+
+$ROOTCMD update-alternatives --set x-www-browser /usr/bin/firefox
