@@ -8,3 +8,6 @@ gnome-shell-extension-gsconnect
 gnome-shell-extension-tiling-assistant
 gnome-shell-extension-runcat
 gnome-shell-extension-apps-menu
+
+PACKAGES remove
+gnome-shell-extension-prefs

@@ -1,0 +1,14 @@
+[org/gnome/shell]
+enabled-extensions=['runcat@kolesnikov.se', 'ubuntu-appindicators@ubuntu.com', 'gsconnect@andyholmes.github.io', 'dash-to-dock@micxgx.gmail.com']
+
+[org/gnome/shell/extensions/runcat]
+displaying-items='percentage-only'
+
+[org/gnome/shell/extensions/dash-to-dock]
+background-opacity=0.80000000000000004
+dash-max-icon-size=48
+dock-position='BOTTOM'
+height-fraction=0.90000000000000002
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+show-trash=false
