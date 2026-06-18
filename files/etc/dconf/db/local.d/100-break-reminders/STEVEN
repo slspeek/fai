@@ -1,0 +1,10 @@
+[org/gnome/desktop/break-reminders]
+selected-breaks=['eyesight', 'movement']
+
+[org/gnome/desktop/break-reminders/eyesight]
+play-sound=true
+
+[org/gnome/desktop/break-reminders/movement]
+duration-seconds=uint32 120
+interval-seconds=uint32 1200
+play-sound=true
