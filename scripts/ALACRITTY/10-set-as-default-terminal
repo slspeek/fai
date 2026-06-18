@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+$ROOTCMD update-alternatives --set x-terminal-emulator /usr/bin/alacritty
