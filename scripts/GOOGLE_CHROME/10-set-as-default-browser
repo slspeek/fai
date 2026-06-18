@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
-# $ROOTCMD xdg-settings set default-web-browser com.google.Chrome.desktop
+$ROOTCMD sudo -u $username xdg-settings set default-web-browser com.google.Chrome.desktop
 
 $ROOTCMD update-alternatives --set x-www-browser /usr/bin/google-chrome-stable
+$ROOTCMD update-alternatives --set gnome-www-browser /usr/bin/google-chrome-stable
+
