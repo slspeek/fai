@@ -4,5 +4,10 @@
 
 disk_config disk1 disklabel:msdos bootable:1 fstabkey:uuid
 
-primary /      2G-   btrfs  rw,noatime,subvol=@/
+primary -      2G-   -   -
 logical swap   200-10G  swap  sw
+
+disk_config btrfs fstabkey:uuid
+
+btrfs  single  /  disk1.1  subvol=@/,defaults,noatime    
+btrfs  single  /home  disk1.1  subvol=@/home,defaults,noatime    
