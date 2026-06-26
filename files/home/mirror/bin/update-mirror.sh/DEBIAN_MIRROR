@@ -16,16 +16,17 @@ COMMON_OPTS=$(cat <<-EOF
   --arch=$ARCHITECTURES 
   --check-gpg 
   --keyring /usr/share/keyrings/debian-archive-keyring.gpg
-  --host=$MIRROR_FROM 
 EOF
 )
 
 echo
 echo "`basename $0`: Upgrading Debian security repository ..."
 debmirror \
+  --host=security.debian.org \
   --root=debian-security \
   --section=main,contrib,non-free,non-free-firmware \
   --dist=$DIST-security \
+  --rsync-extra=none \
   $COMMON_OPTS \
   $LOCATION/debian-security/ 
 echo "`basename $0`: Upgrading Debian security repository: Done."
@@ -33,6 +34,7 @@ echo "`basename $0`: Upgrading Debian security repository: Done."
 echo
 echo "`basename $0`: Upgrading Debian default repository ..."
 debmirror \
+  --host=$MIRROR_FROM \
   --root=debian \
   --section=main,contrib,non-free,non-free-firmware,main/debian-installer \
   --dist=$DIST,$DIST-updates \
