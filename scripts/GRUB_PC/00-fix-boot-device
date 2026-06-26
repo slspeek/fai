@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Check if disk_var.sh exists
+if [ -f $LOGDIR/disk_var.sh ]; then
+    # Retrieve current BOOT_DEVICE
+    source $LOGDIR/disk_var.sh
+    
+    # If BOOT_DEVICE ends with a digit (e.g. /dev/sda1), strip the trailing digit(s)
+    if [[ "$BOOT_DEVICE" =~ [0-9]$ ]]; then
+        NEW_BOOT_DEVICE=$(echo "$BOOT_DEVICE" | sed 's/[0-9]*$//')
+        
+        # Update it in FAI's active environment file
+        sed -i "s|BOOT_DEVICE=.*|BOOT_DEVICE=\"$NEW_BOOT_DEVICE\"|" $LOGDIR/disk_var.sh
+        echo "$0: BOOT_DEVICE changed from $BOOT_DEVICE to $NEW_BOOT_DEVICE"
+    fi
+fi
