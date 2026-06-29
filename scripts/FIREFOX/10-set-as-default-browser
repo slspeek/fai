@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-$ROOTCMD sudo -u $username xdg-settings set default-web-browser firefox.desktop
+$ROOTCMD sudo -u $username sh -c "mkdir -p ~/.config/ && xdg-settings set default-web-browser firefox.desktop"
 
 $ROOTCMD update-alternatives --set x-www-browser /usr/bin/firefox
 $ROOTCMD update-alternatives --set gnome-www-browser /usr/bin/firefox
