@@ -1,11 +1,11 @@
 #!/bin/bash
 #
-LOCATION=/home/mirror/debian-mirrors
-DIST=trixie
-ARCHITECTURES=amd64
-MIRROR_FROM={%MIRROR_FROM%}
+location=/home/mirror/debian-mirrors
+dist=trixie
+architectures=amd64
+mirror_from={%MIRROR_FROM%}
 
-COMMON_OPTS=$(cat <<-EOF
+common_opts=$(cat <<-EOF
   --verbose 
   --progress 
   --exclude=-dbg_* 
@@ -13,7 +13,7 @@ COMMON_OPTS=$(cat <<-EOF
   --method=http 
   --i18n 
   --getcontents 
-  --arch=$ARCHITECTURES 
+  --arch=$architectures 
   --check-gpg 
   --keyring /usr/share/keyrings/debian-archive-keyring.gpg
 EOF
@@ -25,21 +25,21 @@ debmirror \
   --host=security.debian.org \
   --root=debian-security \
   --section=main,contrib,non-free,non-free-firmware \
-  --dist=$DIST-security \
+  --dist=$dist-security \
   --rsync-extra=none \
-  $COMMON_OPTS \
-  $LOCATION/debian-security/ 
+  $common_opts \
+  $location/debian-security/ 
 echo "`basename $0`: Upgrading Debian security repository: Done."
 
 echo
 echo "`basename $0`: Upgrading Debian default repository ..."
 debmirror \
-  --host=$MIRROR_FROM \
+  --host=$mirror_from \
   --root=debian \
   --section=main,contrib,non-free,non-free-firmware,main/debian-installer \
-  --dist=$DIST,$DIST-updates \
-  $COMMON_OPTS \
-  $LOCATION/debian/ 
+  --dist=$dist,$dist-updates,$dist-backports \
+  $common_opts \
+  $location/debian/ 
 echo "`basename $0`: Upgrading Debian default repository: Done."
 echo
 
