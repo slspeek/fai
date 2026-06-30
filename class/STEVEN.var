@@ -1,6 +1,6 @@
 username=steven
 HOSTNAME=steven
-#USERPW=$(echo $username | mkpasswd -m yescrypt -s)
+USERPW=$(echo $username | mkpasswd -m yescrypt -s)
 USERPW=
 #ROOTPW=$USERPW
 ROOTPW=
