@@ -7,10 +7,10 @@ install_dotfiles() {
     tldr --update && \
     stow -v --dotfiles --adopt . && \
     git restore . 
-	if [ -n "ITSME" ]; then
+	if [ -n "$ITSME" ]; then
 		./scripts/itsme.sh
 	fi
 }
     
-$ROOTCMD sudo -u $($ROOTCMD id -nu 1000) bash -c "$(declare -f install_dotfiles); install_dotfiles"
+$ROOTCMD sudo -u $username bash -c "export ITSME=$ITSME; $(declare -f install_dotfiles); install_dotfiles"
     
