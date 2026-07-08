@@ -1,7 +1,0 @@
-gdm3    gdm3/daemon_name        string  /usr/sbin/gdm3
-# Choices: sddm.service
-unknown needrestart/ui-query_pkgs       multiselect     sddm.service
-sddm    sddm/daemon_name        string  /usr/bin/sddm
-# Choices: gdm3, sddm
-gdm3    shared/default-x-display-manager        select  sddm
-sddm    shared/default-x-display-manager        select  sddm
