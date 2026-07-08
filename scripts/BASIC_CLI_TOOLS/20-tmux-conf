@@ -1,5 +1,0 @@
-#! /bin/bash
-
-set -e
-fcopy -M /etc/skel/.tmux.conf
-$ROOTCMD cp /etc/skel/.tmux.conf /root/
