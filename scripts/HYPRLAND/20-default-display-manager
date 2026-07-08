@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-
-$ROOTCMD debconf-set-selections < $FAI/debconf/HYPRLAND
-$ROOTCMD sh -c "DEBIAN_FRONTEND=noninteractive dpkg-reconfigure sddm"
