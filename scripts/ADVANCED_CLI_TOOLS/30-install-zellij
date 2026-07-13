@@ -1,4 +1,0 @@
-#!/bin/bash
-set -e
-
-$ROOTCMD /usr/local/bin/reinstall-zellij.sh
