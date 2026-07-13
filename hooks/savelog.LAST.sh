@@ -220,8 +220,7 @@ unshare: unshare failed: Operation not permitted
 10.0.2.2: command not found
 Failed to query local AF_VSOCK CID: Cannot assign requested address
 /usr/lib/systemd/system-generators/systemd-ssh-generator failed with exit status 1.
-libxcb-errors0
-Failed to preset unit: File '/etc/systemd/system/display-manager.service' already exists and is a symlink to /lib/systemd/system/gdm3.service"
+libxcb-errors0"
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # The main routine
 errorpatterns="$globalerrorpatterns
