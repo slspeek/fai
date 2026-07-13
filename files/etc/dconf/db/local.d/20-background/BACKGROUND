@@ -4,6 +4,7 @@ picture-options = "zoom"
 
 [org/gnome/desktop/background]
 picture-uri = "file://{%WALLPAPER_DIRECTORY%}/{%WALLPAPER_FILENAME%}"
+picture-uri-dark = "file://{%WALLPAPER_DIRECTORY%}/{%WALLPAPER_FILENAME%}"
 picture-options = "zoom"
 
 [org/mate/background]
