@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e
+
+url=$1
+deb_file=$(basename "$url")
+
+tempdir=$(mktemp -d)
+cd "$tempdir"
+
+wget --no-verbose "$url"
+DEBIAN_FRONTEND=noninteractive apt-get install --yes -qq "./$deb_file"
