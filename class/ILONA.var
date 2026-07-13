@@ -1,4 +1,4 @@
-HOSTNAME=ilona
+HOSTNAME=ilonix
 username=ilona
 USERPW=$(echo $username | mkpasswd -m yescrypt -s)
 
