@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+
+# Due to the fact that the installer also sets up a repository, we need to disable it after installation to avoid conflicts with the official Spotify repository.
+$ROOTCMD extrepo disable spotify
