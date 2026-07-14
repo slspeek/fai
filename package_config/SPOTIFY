@@ -1,0 +1,5 @@
+PACKAGES install
+spotify-client
+
+PACKAGES install GNOME
+spotify-client-gnome-support
