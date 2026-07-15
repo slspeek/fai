@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+VERSION=2.18.4
+
+EXTENSION_DOWNLOAD_URL=https://addons.mozilla.org/firefox/downloads/file/4864693/pwas_for_firefox-${VERSION}.xpi
+
+$ROOTCMD /usr/local/bin/install-mozilla-extension-system-wide.sh $EXTENSION_DOWNLOAD_URL firefoxpwa@filips.si

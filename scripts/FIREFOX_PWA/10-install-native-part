@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+
+$ROOTCMD sh -c "curl -s https://packagecloud.io/install/repositories/filips/FirefoxPWA/script.deb.sh?any=true | bash"
+$ROOTCMD apt-get install -y firefoxpwa
